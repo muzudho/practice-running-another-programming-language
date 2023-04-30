@@ -13,6 +13,6 @@ defmodule ElixirExample do
   """
   def start(_type, _args) do
     IO.puts("Hello, world!! I am Elixir!")
-    {:ok,self()}
+    {:ok, self()}
   end
 end
