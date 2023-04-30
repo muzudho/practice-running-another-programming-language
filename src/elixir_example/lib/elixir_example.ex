@@ -6,7 +6,7 @@ defmodule ElixirExample do
   @doc """
   Hello world.
 
-  ## Examples
+  ## (Examples)
 
       mix run
 

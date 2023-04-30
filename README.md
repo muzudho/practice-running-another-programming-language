@@ -75,7 +75,7 @@ defmodule ElixirExample do
   @doc """
   Hello world.
 
-  ## Examples
+  ## (Examples)
 
       mix run
 
@@ -147,7 +147,7 @@ defmodule FromElixir do
   @doc """
   Call another program.
 
-  ## Examples
+  ## (Examples)
 
       mix run
 

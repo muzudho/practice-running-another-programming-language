@@ -6,14 +6,20 @@ defmodule FromElixir do
   @doc """
   Call another program.
 
-  ## Examples
+  ## (Examples)
 
       mix run
+      Hello, world!! I am a Python!
+      finished. status:0
 
   """
   def start(_type, _args) do
-    {output, status} = System.cmd("python", ["i_am.py"], cd: "../python_example")
-    IO.puts("output:#{output} status:#{status}")
+    {_output, status} = System.cmd("python", ["i_am.py"],
+      [
+        cd: "../python_example",
+        into: IO.stream(:stdio, :line)
+      ])
+    IO.puts("finished. status:#{status}")
 
     {:ok, self()}
   end
